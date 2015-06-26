@@ -1,7 +1,8 @@
-title: "Android Studio 使用分享"
+title: "AndroidStudio 使用分享"
 date: 2015-06-26 12:05:50
 tags: Android
 ---
+
 新建，导入的时候gradle需初始化，会下载当前项目所需的gradle版本，迟迟下载不下来可通过离线安装来完成。
 1.在用户目录下，进入如下目录，目录中会列出当成电脑中所拥有的所有gradle版本。
 > ~\\.gradle\wrapper\dists
