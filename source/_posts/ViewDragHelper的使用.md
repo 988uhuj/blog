@@ -3,13 +3,14 @@ date: 2015-06-21 13:31:53
 tags: Android View
 ---
 ViewDragHelper是v4包中的一个工具类，类路径为`android.support.v4.widget`。主要作用是帮助开发者更方便的实现view的拖动效果。在v4包中相应的使用有`DrawerLayout`和`SlidingPaneLayout`。
-
+<!-- more-->
 在不使用ViewDragHelper的情况下实现View的拖动效果一般需要处理这几步：
 1. 在父类的ViewGroup中根据手势位置判断是否拦截手势
 2. 拦截完手势事件的处理
 3. View状态位置的更新
 4. 惯性滑动
 5. ...
+
 在[MenuDrawer](https://github.com/SimonVT/android-menudrawer)中便是根据自定义的逻辑处理drawer的各个状态，有兴趣的也可以研究MenuDrawer的源码。
 
 使用ViewDragHelper方式来实现
@@ -19,9 +20,12 @@ ViewDragHelper是v4包中的一个工具类，类路径为`android.support.v4.wi
 
 开发者只需关注Callback中各个位置及状态值得更新即可。相比于自定义实现，ViewDragHelper所做的便是将手势事件拦截以及事件处理封装在自己内部，已回调的形式返回开发者所需的各个属性值，从而省去开发者花费在事件拦截事件处理上的时间。
 
+---
+
 下面实现一个简单的横向拖动View的例子。
+
 效果图
-![hdrag][http://github.com/chenupt/blog/res/hdrag.gif]
+![hdrag](https://github.com/chenupt/blog/blob/master/res/hdrag.gif?raw=true)
 
 1. 实现一个自定义ViewGroup。因为拖动事件涉及到父类状态，边境大小等，封装在ViewGroup中更能方便的控制View。ViewDragHelper也是依托于ViewGroup的事件拦截完成View状态的回调。
 ```java
