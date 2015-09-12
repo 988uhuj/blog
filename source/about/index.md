@@ -1,7 +1,8 @@
 title: "about"
 date: 2015-03-14 18:32:15
 ---
-同学帮帮Android工程师
+网易理财Android
+同学帮帮Android
 
 联系我：
 * 邮箱：chenupt@gmail.com

@@ -1,6 +1,8 @@
 title: ViewDragHelper的使用
 date: 2015-06-21 13:31:53
-tags: Android View
+tags: 
+- Android
+- View
 ---
 ViewDragHelper是v4包中的一个工具类，类路径为`android.support.v4.widget`。主要作用是帮助开发者更方便的实现view的拖动效果。在v4包中相应的使用有`DrawerLayout`和`SlidingPaneLayout`。
 <!-- more-->

@@ -68,7 +68,7 @@ theme: next
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:chenupt/chenupt.github.io.git
+  repo: https://github.com/chenupt/chenupt.github.io.git
 
 #next
 avatar: https://avatars0.githubusercontent.com/u/5463006?v=3&s=460
